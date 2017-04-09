@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <unistd.h>
 
 #define WIDTH 100
-#define HEIGHT 100
+#define HEIGHT 200
 #define T 4
 #define RA 4
 #define RB 1
@@ -11,9 +12,11 @@
 #define P_INF 0.0001
 #define PHIV 0.05
 
+
 typedef struct 
 {
 	char state;
+	int lt;
 }Cell;
 
 /*A macro used in system() function
@@ -35,3 +38,7 @@ it changes deppending on the operating system
 void start(void);
 Cell **createLattice(void);
 void printLattice(Cell **);
+
+int countNeighbours(Cell **lattice, int y, int x);
+int validMov(int y, int x);
+void runProcess(Cell **lattice,int);
