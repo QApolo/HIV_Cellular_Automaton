@@ -1,5 +1,5 @@
-# VIH_Cellular_Automata
-A cellular automata based on a model found on a document available at www.sciencedirect.com
+# VIH_Cellular_Automaton
+A cellular automaton based on a model found on a document available at www.sciencedirect.com
 The pdf is also available in this repository
 
 I also added some screenshots to see the behavior of the automata
